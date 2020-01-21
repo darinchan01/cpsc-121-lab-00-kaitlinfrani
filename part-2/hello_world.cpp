@@ -1,11 +1,19 @@
-// Oscar Mayer
-// CPSC 121-99
-// oscar.mayer@csu.fullerton.edu
+// Kaitlin Frani
+// CPSC 121-02
+// kaitlinfrani@csu.fullerton.edu
 
 #include <iostream>
 using namespace std;
 
 int main(int argc, char *argv[]){
-  cout << "Hi!" << endl;
+  if(argc!=3){
+    cout << "Too few arguments." << endl;
+    return 1;
+  }
+  string name = argv[1];
+  int num = stoi(argv[2]);
+  for(int i = 0; i < num; i++){
+    cout << "Hello " << name << endl;
+  }
   return 0;
 }
